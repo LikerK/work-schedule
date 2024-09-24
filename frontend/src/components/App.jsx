@@ -1,5 +1,10 @@
+import Days from "./Days.jsx";
+import '../index.css';
+
 const App = () => {
-  return <h1>App</h1>;
+  return (
+    <Days />
+  );
 }
 
 export default App;
