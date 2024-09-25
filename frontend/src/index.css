@@ -1,10 +1,15 @@
-body {
+* {
   margin: 0;
+}
+body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  height: 100dvh;
+  justify-content: center;
 }
 
 code {
@@ -14,11 +19,34 @@ code {
 
 .days {
   width: 80vw;
+  border-radius: 5px;
   display: flex;
+  padding: 0.5em;
+  background-color: rgb(241, 191, 152);
+  margin-top: 0.5em;
   flex-direction: column;
   gap: 0.5em;
 }
 
 .day {
-  background-color: rgb(157, 157, 157);
+  display: flex;
+  border-radius: 5px;
+  padding: 0.5em;
+  flex-direction: column;
+  background-color: rgb(137, 166, 181);
+  color: rgb(255, 255, 255);
+}
+
+.lessons {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.lesson {
+  display: flex;
+}
+
+.header h4 {
+  text-align: center;
 }

@@ -1,12 +1,13 @@
 import { useState } from "react";
 import Day from "./Day.jsx";
 
+
 const Days = () => {
 
   const data = [
-    {name: 'Понедельник', lessons: ['Alex', 'Sergei'], active: true},
-    {name: 'Вторник', lessons: ['Alex', 'Sergei'], active: false},
-    {name: 'Среда', lessons: ['Alex', 'Sergei'], active: false}
+    { name: 'Понедельник', lessons: [{ name: 'Alex', time: '18:00' }, { name: 'Kirill', time: '17:00' }], active: true },
+    { name: 'Вторник', lessons: [{ name: 'Alex', time: '18:00' }, { name: 'Kirill', time: '17:00' }], active: false },
+    { name: 'Среда', lessons: [{ name: 'Alex', time: '18:00' }, { name: 'Kirill', time: '17:00' }], active: false }
   ];
 
   const [days, setDays] = useState(data);
@@ -14,10 +15,10 @@ const Days = () => {
   const setActiveDay = (name) => {
     setDays(() => days.map(day => {
       if (day.name === name) {
-        return {...day, active: true}
+        return { ...day, active: true }
       }
       if (day.name !== name && day.active) {
-        return {...day, active: false}
+        return { ...day, active: false }
       }
       return day;
     }))
@@ -25,7 +26,7 @@ const Days = () => {
 
   return (
     <div className="days">
-      {days.map(day => <Day day={day} setActiveDay={setActiveDay}/>)}
+      {days.map(day => <Day day={day} setActiveDay={setActiveDay} />)}
     </div>
   )
 }
