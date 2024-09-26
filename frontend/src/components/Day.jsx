@@ -19,8 +19,9 @@ const Day = ({ day, setActiveDay }) => {
       >
         {lessons.map(lesson => (
           <div className="lesson">
-            <div className="lesson-name">{lesson.name}</div>
             <div className="lesson-time">{lesson.time}</div>
+            <span>|</span>
+            <div className="lesson-name">{lesson.name}</div>
           </div>
         ))}
       </motion.div>

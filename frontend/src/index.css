@@ -8,8 +8,16 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: flex;
+  width: 100vw;
   height: 100dvh;
+  background: #d4cbd9;
   justify-content: center;
+  align-items: center;
+}
+
+#root {
+  width: 90%;
+  height: 90%;
 }
 
 code {
@@ -18,11 +26,11 @@ code {
 }
 
 .days {
-  width: 80vw;
+  border: 2px solid #000000;
   border-radius: 5px;
   display: flex;
   padding: 0.5em;
-  background-color: rgb(241, 191, 152);
+  background-color: #C6BAFF;
   margin-top: 0.5em;
   flex-direction: column;
   gap: 0.5em;
@@ -31,21 +39,33 @@ code {
 .day {
   display: flex;
   border-radius: 5px;
-  padding: 0.5em;
+  padding: 0.25em;
   flex-direction: column;
-  background-color: rgb(137, 166, 181);
-  color: rgb(255, 255, 255);
+  background-color: #E9E6FB;
+  color: rgb(0, 0, 0);
+  border: 2px solid #000;
 }
 
 .lessons {
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
 }
 
 .lesson {
+  color: #ffffff;
+  font-weight: 700;
+  border-radius: 5px;
   display: flex;
+  gap: 0.3em;
+  padding: 0.25em;
+  margin: 0.25em;
+  border: 2px solid #565656;
+  background-color: #7155ff;
 }
+
+
 
 .header h4 {
   text-align: center;
