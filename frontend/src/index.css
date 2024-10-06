@@ -27,19 +27,21 @@ code {
 
 .days {
   border: 2px solid #000000;
+  height: 80vh;
+  overflow: auto;
   border-radius: 5px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
   padding: 0.5em;
   background-color: #C6BAFF;
   margin-top: 0.5em;
-  flex-direction: column;
   gap: 0.5em;
 }
 
 .day {
   display: flex;
   border-radius: 5px;
-  padding: 0.25em;
+  padding: 0.5em;
   flex-direction: column;
   background-color: #E9E6FB;
   color: rgb(0, 0, 0);
@@ -54,19 +56,45 @@ code {
 }
 
 .lesson {
-  color: #ffffff;
-  font-weight: 700;
+  color: #000000;
+  font-weight: 500;
   border-radius: 5px;
   display: flex;
   gap: 0.3em;
   padding: 0.25em;
-  margin: 0.25em;
-  border: 2px solid #565656;
-  background-color: #7155ff;
+  /* margin: 0.25em; */
+  border-bottom: 2px solid rgba(125, 125, 125, 0.5);
+  /* background-color: #7155ff; */
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25em 0;
+  border-bottom: 2px solid #000;
+}
 
+.header button {
+  background: none;
+  border-radius: 5px;
+  font-weight: 700;
+}
 
-.header h4 {
-  text-align: center;
+/* form {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+} */
+
+form .lesson-time {
+  width: 25%;
+}
+
+form .lesson-name {
+  width: 75%;
+}
+
+input {
+  width: 50%;
+  background: transparent;
+  border: none;
 }
