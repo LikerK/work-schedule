@@ -3,7 +3,11 @@ const buildState = (defaultState) => {
     days: [
       { name: 'Понедельник', lessons: [{ name: 'Alex', time: '18:00' }, { name: 'Kirill', time: '17:00' }], active: true },
       { name: 'Вторник', lessons: [{ name: 'Alex', time: '18:00' }, { name: 'Kirill', time: '17:00' }], active: false },
-      { name: 'Среда', lessons: [{ name: 'Alex', time: '18:00' }, { name: 'Kirill', time: '17:00' }], active: false }
+      { name: 'Среда', lessons: [{ name: 'Alex', time: '18:00' }, { name: 'Kirill', time: '17:00' }], active: false },
+      { name: 'Четверг', lessons: [{ name: 'Alex', time: '18:00' }, { name: 'Kirill', time: '17:00' }], active: false },
+      { name: 'Пятница', lessons: [{ name: 'Alex', time: '18:00' }, { name: 'Kirill', time: '17:00' }], active: false },
+      { name: 'Суббота', lessons: [{ name: 'Alex', time: '18:00' }, { name: 'Kirill', time: '17:00' }], active: false },
+      { name: 'Воскресенье', lessons: [{ name: 'Alex', time: '18:00' }, { name: 'Kirill', time: '17:00' }], active: false }
     ]
   };
 
