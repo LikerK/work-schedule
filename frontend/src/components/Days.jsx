@@ -22,7 +22,8 @@ const Days = () => {
   date.setDate(date.getDate() - currentDay + 1);
 
   const dates = daysNames.map((name, i) => {
-    const dateName = `${date.getDate()} ${name}`;
+    const num = date.getDate().toString().padStart(2, '0');
+    const dateName = `${num} ${name}`;
     date.setDate(date.getDate() + 1);
     return dateName;
   });

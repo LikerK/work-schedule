@@ -31,7 +31,7 @@ const Day = ({ day, setActiveDay, dayName }) => {
   return (
     <div className="day" onClick={() => setActiveDay(day.name)}>
       <div className="header">
-        <h4>{number}</h4>
+        <h2>{number}</h2>
         <h4>{name}</h4>
 
         {/* {day.active && <button>+</button>} */}
